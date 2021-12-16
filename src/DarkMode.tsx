@@ -1,33 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 
-import "./DarkMode.css";
-import { ChangeEventHandler } from "react";
+import './DarkMode.css'
+import { ChangeEventHandler } from 'react'
 
 const DarkMode = () => {
   const [theme, setTheme] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
+    const storedTheme = localStorage.getItem('theme')
 
     const prefersDark =
       window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
+      window.matchMedia('(prefers-color-scheme: dark)')
+        .matches
 
     const defaultDark =
-      storedTheme === "dark" || (storedTheme === null && prefersDark);
-    return defaultDark ? 'dark' : 'light';
-  });
+      storedTheme === 'dark' ||
+      (storedTheme === null && prefersDark)
+    return defaultDark ? 'dark' : 'light'
+  })
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem('theme', theme)
+    document.documentElement.setAttribute(
+      'data-theme',
+      theme,
+    )
   }, ['theme', theme])
 
-  const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
+  const toggleTheme: ChangeEventHandler<
+    HTMLInputElement
+  > = (e) => {
     if (e.target.checked) {
-      setTheme('dark');
+      setTheme('dark')
     } else {
-      setTheme('light');
+      setTheme('light')
     }
-  };
+  }
 
   return (
     <div className="toggle-theme-wrapper">
@@ -36,7 +43,6 @@ const DarkMode = () => {
         <input
           type="checkbox"
           id="checkbox"
-
           // NEW
           onChange={toggleTheme}
           defaultChecked={theme === 'dark'}
@@ -45,7 +51,7 @@ const DarkMode = () => {
       </label>
       <span>🌒</span>
     </div>
-  );
-};
+  )
+}
 
-export default DarkMode;
+export default DarkMode
