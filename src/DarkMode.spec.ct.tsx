@@ -15,7 +15,7 @@ it('toggles dark mode', () => {
     .should('eq', 'dark')
 })
 
-it.only('takes preferred media', () => {
+it('takes preferred media', () => {
   cy.window()
     .then((win) => {
       cy.stub(win, 'matchMedia')

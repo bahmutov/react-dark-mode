@@ -2,6 +2,22 @@ import React from 'react'
 import { mount } from '@cypress/react'
 import App from './App'
 
+it('stops the animation', () => {
+  mount(<App />, {
+    style: `
+      .App-logo {
+        animation: none;
+      }
+    `,
+  })
+  // how to check the animation css?
+  cy.get('.App-logo').should(
+    'have.css',
+    'animation-name',
+    'none',
+  )
+})
+
 it('toggles the theme', () => {
   mount(<App />)
   cy.get('a').contains('Learn React')

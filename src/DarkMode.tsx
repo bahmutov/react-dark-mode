@@ -24,7 +24,7 @@ const DarkMode = () => {
       'data-theme',
       theme,
     )
-  }, ['theme', theme])
+  }, [theme])
 
   const toggleTheme: ChangeEventHandler<
     HTMLInputElement
