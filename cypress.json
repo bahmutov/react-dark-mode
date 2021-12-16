@@ -2,5 +2,7 @@
   "component": {
     "testFiles": "**/*.spec.ct.{js,ts,jsx,tsx}",
     "componentFolder": "src"
-  }
+  },
+  "fixturesFolder": false,
+  "supportFile": false
 }
