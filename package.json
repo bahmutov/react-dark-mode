@@ -44,7 +44,7 @@
   "devDependencies": {
     "@cypress/react": "^5.10.3",
     "@cypress/webpack-dev-server": "^1.7.0",
-    "cypress": "^9.1.1",
+    "cypress": "^9.2.1",
     "eslint-plugin-cypress": "^2.12.1",
     "prettier": "^2.5.1"
   }
