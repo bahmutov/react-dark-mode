@@ -9,6 +9,7 @@ Repo [bahmutov/react-dark-mode](https://github.com/bahmutov/react-dark-mode)
 ## Videos
 
 - [Stop CSS Animation In A Component Test](https://youtu.be/VtIvGznpo_A)
+- [Using Cypress Component Testing To Really Test A React Dark Mode Component](https://youtu.be/VdyZonBAeLw)
 
 ## Run
 
@@ -16,3 +17,7 @@ Repo [bahmutov/react-dark-mode](https://github.com/bahmutov/react-dark-mode)
 yarn install
 yarn cypress open-ct
 ```
+
+## Tests
+
+See [DarkMode.spec.ct.tsx](./src/DarkMode.spec.ct.tsx) and [App.spec.ct.tsx](./src/App.spec.ct.tsx)
