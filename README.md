@@ -6,6 +6,10 @@ The application was described in the blog post [How to Create a Dark Mode Compon
 
 Repo [bahmutov/react-dark-mode](https://github.com/bahmutov/react-dark-mode)
 
+## Videos
+
+- [Stop CSS Animation In A Component Test](https://youtu.be/VtIvGznpo_A)
+
 ## Run
 
 ```
