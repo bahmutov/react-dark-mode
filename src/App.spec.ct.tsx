@@ -55,6 +55,7 @@ it('uses media match', () => {
     cy.stub(win, 'matchMedia')
       .withArgs('(prefers-color-scheme: dark)')
       .returns({ matches: true })
+      // @ts-ignore
       .as('matchMedia')
   })
   mount(<App />)
