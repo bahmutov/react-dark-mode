@@ -10,6 +10,7 @@ Repo [bahmutov/react-dark-mode](https://github.com/bahmutov/react-dark-mode)
 
 - [Stop CSS Animation In A Component Test](https://youtu.be/VtIvGznpo_A)
 - [Using Cypress Component Testing To Really Test A React Dark Mode Component](https://youtu.be/VdyZonBAeLw)
+- [Setup GitHub Actions To Run Cypress Component Tests](https://youtu.be/0Bp_FXToQpg), see [ci.yml](./.github/workflows/ci.yml) file
 
 ## Run
 
