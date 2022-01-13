@@ -1,4 +1,4 @@
-# Component Testing for React Dark Mode app
+# Component Testing for React Dark Mode app [![ci](https://github.com/bahmutov/react-dark-mode/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/bahmutov/react-dark-mode/actions/workflows/ci.yml)
 
 The application was described in the blog post [How to Create a Dark Mode Component in React](https://dev.to/alexeagleson/how-to-create-a-dark-mode-component-in-react-3ibg#adding-tests-optional). This repo is a fork with added [Cypress Component tests](https://on.cypress.io/component-testing).
 
